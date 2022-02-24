@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\NetMvcApp.Core\NetMvcApp.Core.csproj" />
+    <ProjectReference Include="..\NetMvcApp.Northwind.Entities\NetMvcApp.Northwind.Entities.csproj" />
+    <ProjectReference Include="..\NetMvcApp.Nortwind.Business\NetMvcApp.Nortwind.Business.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Middlewares\" />
+  </ItemGroup>
+
+</Project>

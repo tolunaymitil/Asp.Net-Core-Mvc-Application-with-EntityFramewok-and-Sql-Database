@@ -1,0 +1,28 @@
+﻿@model NetMvcApp.WebUI.Models.ProductListViewModel
+@{
+    Layout = "~/Views/_Layout.cshtml";
+}
+
+
+ 
+    <div>
+        <table class="table table-responsive">
+            <tr>
+                <td>ProductName</td>
+                <td>UnitPrice</td>
+                <td>Units In Stock</td>
+
+            </tr>
+            @foreach (var item in Model.Products)
+            {
+        <tr>
+            <td>@item.ProductName</td>
+            <td>@item.UnitPrice</td>
+            <td>@item.UnitsInstock</td>
+           
+
+        </tr>
+            }
+        </table>
+    </div>
+ 
